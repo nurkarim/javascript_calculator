@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaSctipt Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="heading">Calculator</div>
+    <form name="mycalculator">
+
+        <div class="display" style="display: flex">
+          <div class="left_div">
+              <input type="reset" name="rst" value="C" >
+          </div>
+            <div class="right_div">
+                <input type="text" placeholder="0" style="outline: none" name="displayResult" />
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <input type="button" name="b7" value="7" onClick="calcNumbers(this.value)">
+                <input type="button" name="b8" value="8" onClick="calcNumbers(this.value)">
+                <input type="button" name="b9" value="9" onClick="calcNumbers(this.value)">
+                <input type="button" name="addb" value="+" onClick="calcNumbers(this.value)">
+            </div>
+
+            <div class="row">
+                <input type="button" name="b4" value="4" onClick="calcNumbers(this.value)">
+                <input type="button" name="b5" value="5" onClick="calcNumbers(this.value)">
+                <input type="button" name="b6" value="6" onClick="calcNumbers(this.value)">
+                <input type="button" name="subb" value="-" onClick="calcNumbers(this.value)">
+            </div>
+
+            <div class="row">
+                <input type="button" name="b1" value="1" onClick="calcNumbers(this.value)">
+                <input type="button" name="b2" value="2" onClick="calcNumbers(this.value)">
+                <input type="button" name="b3" value="3" onClick="calcNumbers(this.value)">
+                <input type="button" name="mulb" value="*" onClick="calcNumbers(this.value)">
+            </div>
+
+            <div class="row">
+                <input type="button" name="b0" value="0" onClick="calcNumbers(this.value)">
+                <input type="button" name="potb" value="." onClick="calcNumbers(this.value)">
+                <input type="button" name="divb" value="/" onClick="calcNumbers(this.value)">
+                <input type="button" class="yellow" value="=" onClick="displayResult.value=eval(displayResult.value)">
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+    function calcNumbers(result){
+        mycalculator.displayResult.value=mycalculator.displayResult.value+result;
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+
+body, html {
+    background: #ECEDEF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1f2326;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 14px;
+    padding-bottom: 20px;
+    width: 320px;
+
+}
+.display {
+    width: 100%;
+    height: 60px;
+    padding: 40px 0;
+    background: #fbf9f9;
+}
+.buttons {
+    padding: 20px 20px 0 20px;
+}
+.row {
+    width: 280px;
+    float: left;
+}
+input[type=button] {
+    width: 65px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    margin: 2px;
+    box-sizing: border-box;
+    background: #2d2d2d;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #fbf9f9;
+    cursor: pointer;
+
+}
+input[type=text] {
+    width: 210px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    color: #333;
+    text-align: right;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 25px;
+
+}
+.yellow {
+    background: #f5b320 !important;
+    color: #ffffff !important;
+
+}
+
+
+
+.left_div input{
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    margin: 5px;
+    box-sizing: border-box;
+    background: #5e6269;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #FFF;
+    cursor: pointer;
+}
+.heading {
+    text-align: left;
+    font-size: 22px;
+    color: #000000;
+    padding: 10px 0 0 10px;
+    background: #fbf9f9;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
